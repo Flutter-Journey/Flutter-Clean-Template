@@ -1,3 +1,9 @@
+/*
+ * @ Author: Flutter Journey 🎯 <flutterjourney.org@gmail.com>
+ * @ Created: 2024-12-11 07:31:40
+ * @ Message: You look very hardworking 👨‍💻. Keep focusing on your goals. 🌤️
+ */
+
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -48,17 +54,14 @@ class _ChooseModePageState extends State<ChooseModePage> {
           //
 
           Padding(
-            padding:
-                const EdgeInsets.symmetric(vertical: 50.0, horizontal: 40.0),
+            padding: const EdgeInsets.symmetric(vertical: 50.0, horizontal: 40.0),
             child: Column(
               children: [
                 const SizedBox(height: 100),
                 Align(
                   alignment: Alignment.topCenter,
                   child: Image.asset(
-                    context.isDarkMode
-                        ? AppImages.logoDark
-                        : AppImages.logoLight,
+                    context.isDarkMode ? AppImages.logoDark : AppImages.logoLight,
                   ),
                 ),
                 const Spacer(),
@@ -66,8 +69,7 @@ class _ChooseModePageState extends State<ChooseModePage> {
                   'Choose Mode',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color:
-                        context.isDarkMode ? AppColors.white : AppColors.dark,
+                    color: context.isDarkMode ? AppColors.white : AppColors.dark,
                     fontSize: 28,
                   ),
                 ),
@@ -82,9 +84,7 @@ class _ChooseModePageState extends State<ChooseModePage> {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            context
-                                .read<ThemeCubit>()
-                                .updateTheme(ThemeMode.dark);
+                            context.read<ThemeCubit>().updateTheme(ThemeMode.dark);
                           },
                           child: ClipOval(
                             child: BackdropFilter(
@@ -113,9 +113,7 @@ class _ChooseModePageState extends State<ChooseModePage> {
                           style: TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 17,
-                            color: context.isDarkMode
-                                ? AppColors.grey
-                                : AppColors.darkGrey,
+                            color: context.isDarkMode ? AppColors.grey : AppColors.darkGrey,
                           ),
                         )
                       ],
@@ -124,9 +122,7 @@ class _ChooseModePageState extends State<ChooseModePage> {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            context
-                                .read<ThemeCubit>()
-                                .updateTheme(ThemeMode.light);
+                            context.read<ThemeCubit>().updateTheme(ThemeMode.light);
                           },
                           child: ClipOval(
                             child: BackdropFilter(
@@ -156,9 +152,7 @@ class _ChooseModePageState extends State<ChooseModePage> {
                           style: TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 17,
-                            color: context.isDarkMode
-                                ? AppColors.grey
-                                : AppColors.darkGrey,
+                            color: context.isDarkMode ? AppColors.grey : AppColors.darkGrey,
                           ),
                         )
                       ],
@@ -173,8 +167,7 @@ class _ChooseModePageState extends State<ChooseModePage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (BuildContext context) =>
-                            const SignupOrSignin(),
+                        builder: (BuildContext context) => const SignupOrSignin(),
                       ),
                     );
                   },

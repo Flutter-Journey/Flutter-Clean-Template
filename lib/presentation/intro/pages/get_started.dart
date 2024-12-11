@@ -1,3 +1,9 @@
+/*
+ * @ Author: Flutter Journey 🎯 <flutterjourney.org@gmail.com>
+ * @ Created: 2024-12-11 07:31:40
+ * @ Message: You look very hardworking 👨‍💻. Keep focusing on your goals. 🌤️
+ */
+
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_architecture_template/common/helpers/is_dark_mode.dart';
 import 'package:flutter_clean_architecture_template/common/widgets/button/basic_app_button.dart';
@@ -37,8 +43,7 @@ class GetStartedPage extends StatelessWidget {
           //
 
           Padding(
-            padding:
-                const EdgeInsets.symmetric(vertical: 50.0, horizontal: 40.0),
+            padding: const EdgeInsets.symmetric(vertical: 50.0, horizontal: 40.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -49,9 +54,7 @@ class GetStartedPage extends StatelessWidget {
                 Align(
                   alignment: Alignment.center,
                   child: Image.asset(
-                    context.isDarkMode
-                        ? AppImages.logoDark
-                        : AppImages.logoLight,
+                    context.isDarkMode ? AppImages.logoDark : AppImages.logoLight,
                   ),
                 ),
                 const Spacer(),
@@ -59,8 +62,7 @@ class GetStartedPage extends StatelessWidget {
                   'Flutter Journey',
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
-                    color:
-                        context.isDarkMode ? AppColors.white : AppColors.dark,
+                    color: context.isDarkMode ? AppColors.white : AppColors.dark,
                     fontSize: 32,
                   ),
                 ),
@@ -73,9 +75,7 @@ class GetStartedPage extends StatelessWidget {
                   'and encourage learning by doing',
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
-                    color: context.isDarkMode
-                        ? AppColors.greyTitle
-                        : AppColors.dark,
+                    color: context.isDarkMode ? AppColors.greyTitle : AppColors.dark,
                     fontSize: 16,
                   ),
                   textAlign: TextAlign.center,
@@ -88,8 +88,7 @@ class GetStartedPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (BuildContext context) =>
-                            const ChooseModePage(),
+                        builder: (BuildContext context) => const ChooseModePage(),
                       ),
                     );
                   },

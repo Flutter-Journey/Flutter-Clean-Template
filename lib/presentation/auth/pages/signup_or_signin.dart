@@ -1,3 +1,9 @@
+/*
+ * @ Author: Flutter Journey 🎯 <flutterjourney.org@gmail.com>
+ * @ Created: 2024-12-11 07:31:40
+ * @ Message: You look very hardworking 👨‍💻. Keep focusing on your goals. 🌤️
+ */
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_clean_architecture_template/common/widgets/appbar/app_bar.dart';
@@ -45,9 +51,7 @@ class SignupOrSignin extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    context.isDarkMode
-                        ? AppImages.logoDark
-                        : AppImages.logoLight,
+                    context.isDarkMode ? AppImages.logoDark : AppImages.logoLight,
                   ),
                   const SizedBox(
                     height: 50,
@@ -56,8 +60,7 @@ class SignupOrSignin extends StatelessWidget {
                     'Flutter Journey',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color:
-                          context.isDarkMode ? AppColors.white : AppColors.dark,
+                      color: context.isDarkMode ? AppColors.white : AppColors.dark,
                       fontSize: 29,
                     ),
                   ),
@@ -68,9 +71,7 @@ class SignupOrSignin extends StatelessWidget {
                     'Journey on the Road to Becoming a Flutter Master 🚀',
                     style: TextStyle(
                       fontWeight: FontWeight.w400,
-                      color: context.isDarkMode
-                          ? AppColors.greyTitle
-                          : AppColors.grey,
+                      color: context.isDarkMode ? AppColors.greyTitle : AppColors.grey,
                       fontSize: 19,
                     ),
                     textAlign: TextAlign.center,
@@ -106,9 +107,7 @@ class SignupOrSignin extends StatelessWidget {
                             "Sign In",
                             style: TextStyle(
                               fontWeight: FontWeight.w500,
-                              color: context.isDarkMode
-                                  ? AppColors.white
-                                  : AppColors.dark,
+                              color: context.isDarkMode ? AppColors.white : AppColors.dark,
                               fontSize: 21,
                             ),
                           ),

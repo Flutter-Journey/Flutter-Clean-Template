@@ -1,3 +1,9 @@
+/*
+ * @ Author: Flutter Journey 🎯 <flutterjourney.org@gmail.com>
+ * @ Created: 2024-12-11 07:31:40
+ * @ Message: You look very hardworking 👨‍💻. Keep focusing on your goals. 🌤️
+ */
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -12,9 +18,8 @@ import 'service_locator.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   HydratedBloc.storage = await HydratedStorage.build(
-    storageDirectory: kIsWeb
-        ? HydratedStorage.webStorageDirectory
-        : await getApplicationDocumentsDirectory(),
+    storageDirectory:
+        kIsWeb ? HydratedStorage.webStorageDirectory : await getApplicationDocumentsDirectory(),
   );
 
   await initializeDependencies();
