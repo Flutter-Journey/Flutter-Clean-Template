@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
   flutter_svg:
   flutter_bloc:
-  hydrated_bloc:
+  hydrated_bloc: 10.0.0
   path_provider:
   get_it:
   dartz:
