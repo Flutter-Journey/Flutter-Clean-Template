@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg:
-  flutter_bloc:
+  flutter_bloc: 9.1.0
   hydrated_bloc:
   path_provider:
   get_it:
